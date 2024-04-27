@@ -24,7 +24,7 @@ layout: base
                     {%- endcapture -%}
 
                     <a id="{{ post.title }}" class="post-link" href="#{{ post.title }}">{{ post.title }}</a>
-                    <span>
+                    <span class="spoiler-trigger">
                         {{ custom_title }} <span class="spoiler">{{ post.answer | capitalize }}!</span>
                     </span>
                 </h3>
