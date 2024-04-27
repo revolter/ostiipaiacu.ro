@@ -22,7 +22,8 @@ layout: base
             <h2 class="post-list-heading">{{ page.list_title }}</h2>
         {%- endif -%}
         <ul class="post-list">
-            {%- for post in posts -%}
+            {%- assign sorted_posts = posts | sort: 'title' -%}
+            {%- for post in sorted_posts -%}
             <li>
                 <h3>
                     {%- comment -%}Duplicated in `head.html`{%- endcomment -%}
