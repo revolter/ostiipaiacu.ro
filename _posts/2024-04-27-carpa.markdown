@@ -1,0 +1,5 @@
+---
+layout: post
+title: cârpa
+answer: Șterge-o!
+---
