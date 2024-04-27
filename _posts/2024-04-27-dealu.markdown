@@ -1,5 +1,5 @@
 ---
 layout: custom-post
 title: dealu
-answer: Valea!
+answer: valea
 ---

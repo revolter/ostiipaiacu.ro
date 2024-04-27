@@ -33,7 +33,7 @@ layout: base
 
                     <a id="{{ post.title }}" class="post-link" href="#{{ post.title }}">{{ post.title }}</a>
                     <span>
-                        {{ custom_title }} <span class="spoiler">{{ post.answer }}</span>
+                        {{ custom_title }} <span class="spoiler">{{ post.answer | capitalize }}!</span>
                     </span>
                 </h3>
                 {%- if site.show_excerpts -%}
