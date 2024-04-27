@@ -1,0 +1,5 @@
+---
+layout: custom-post
+title: albina
+answer: Roiu!
+---
