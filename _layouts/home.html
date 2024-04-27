@@ -27,9 +27,13 @@ layout: base
             <li>
                 <span class="post-meta">{{ post.date | date: date_format }}</span>
                 <h3>
-                    <a class="post-link" href="{{ post.url | relative_url }}">
-                        {{ post.title | escape }}
-                    </a>
+                    {%- comment -%}Duplicated in `head.html`{%- endcomment -%}
+                    {%- capture custom_title -%}
+                        {{ site.title | remove: '?' }} {{ post.title }}?
+                    {%- endcapture -%}
+
+                    <a id="{{ post.title }}" class="post-link" href="#{{ post.title }}">{{ post.title }}</a>
+                    <span>{{ custom_title }} {{ post.answer }}</span>
                 </h3>
                 {%- if site.show_excerpts -%}
                     {{ post.excerpt }}

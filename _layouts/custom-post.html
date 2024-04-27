@@ -2,9 +2,4 @@
 layout: post
 ---
 
-{%- comment -%}Duplicated in `head.html`{%- endcomment -%}
-{%- capture custom_title -%}
-    {{ site.title | remove: '?' }} {{ page.title }}?
-{%- endcapture -%}
-
-{{ custom_title }} {{ page.answer }}
+<meta http-equiv="refresh" content="0; URL={{ site.url }}{{ site.baseurl }}/#{{ page.title }}" />
