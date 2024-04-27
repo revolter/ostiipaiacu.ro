@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: custom-post
 title: cârpa
 answer: Șterge-o!
 ---
