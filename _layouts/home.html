@@ -32,7 +32,9 @@ layout: base
                     {%- endcapture -%}
 
                     <a id="{{ post.title }}" class="post-link" href="#{{ post.title }}">{{ post.title }}</a>
-                    <span>{{ custom_title }} {{ post.answer }}</span>
+                    <span>
+                        {{ custom_title }} <span class="spoiler">{{ post.answer }}</span>
+                    </span>
                 </h3>
                 {%- if site.show_excerpts -%}
                     {{ post.excerpt }}
