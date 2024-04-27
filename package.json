@@ -1,4 +1,7 @@
 {
+    "scripts": {
+        "serve": "watchy --watch '_config.yml' -- bundle exec jekyll serve"
+    },
     "dependencies": {
         "watchy": "*"
     }

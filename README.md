@@ -8,9 +8,15 @@
    ```sh
    bundle install
    ```
+3. Install `Node.js` by following the instructions from
+   https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
+4. Install the `Node.js` dependencies by running
+   ```sh
+   npm install
+   ```
 
 ## Usage
 
 ```sh
-bundle exec jekyll serve
+npm run serve
 ```
