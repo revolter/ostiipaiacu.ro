@@ -1,0 +1,9 @@
+---
+layout: custom-post
+title: Tudor
+answer: tu dormeai când o futeam pe mă-ta
+source: childhood
+tag: NSFW
+---
+
+{{ page.answer | answerify }}
