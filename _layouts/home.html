@@ -30,7 +30,9 @@ layout: base
                         {{ site.title | remove: '?' }} {{ post.title }}?
                     {%- endcapture -%}
 
-                    <a id="{{ post.title }}" class="post-link" style="display: inline-block" href="#{{ post.title }}">🔗</a>
+                    <a id="{{ post.title }}" class="post-link" style="display: inline-block" href="#{{ post.title }}">
+                        {% octicon link height:16 fill:var(--minima-text-color) %}
+                    </a>
                     <span class="spoiler-trigger">
                         {{ custom_title }} <span class="spoiler">{{ post.answer | capitalize }}!</span>
                     </span>

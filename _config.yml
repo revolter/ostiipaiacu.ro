@@ -33,6 +33,7 @@ github_username:  jekyll
 remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
+  - jekyll-octicons
   - jekyll-remote-theme
 
 minima:
