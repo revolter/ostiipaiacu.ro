@@ -4,4 +4,4 @@ title: guma
 answer: întinde-o
 ---
 
-{{ page.answer | capitalize }}!
+{{ page.answer | answerify }}
