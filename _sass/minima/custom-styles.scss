@@ -1,5 +1,16 @@
+$small-gap: 5px;
+
 .permalink {
     display: inline-block;
+    margin-right: $small-gap;
+}
+
+.tag {
+    padding: 0 $small-gap;
+    margin-right: $small-gap;
+    background-color: orange;
+    border-radius: 500px;
+    color: $dm-background-color;
 }
 
 .spoiler * {

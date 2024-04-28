@@ -29,9 +29,12 @@ layout: base
                     <a id="{{ post.title }}" class="post-link permalink" href="#{{ post.title }}">
                         {% octicon link height:16 fill:var(--minima-text-color) %}
                     </a>
-                    <span class="spoiler-trigger">
-                        {{ post.title | questionify: site.title }} <span class="spoiler">{{ post.content }}</span>
-                    </span>
+                    {%- if post.tags contains 'NSFW' -%}
+                        <span class="tag">NSFW</span>
+                    {%- endif -%}
+                    <span class="spoiler-trigger"><!--
+                        -->{{ post.title | questionify: site.title }} <span class="spoiler">{{ post.content }}</span><!--
+                    --></span>
                 </h3>
             </li>
             {%- endfor -%}
