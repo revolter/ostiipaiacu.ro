@@ -1,10 +1,11 @@
-.spoiler {
+.spoiler * {
+    display: inline-block;
     color: transparent;
     background-color: black;
     transition-duration: 300ms;
 }
 
-.spoiler-trigger:hover > .spoiler {
+.spoiler-trigger:hover > .spoiler * {
     color: inherit;
     background-color: inherit;
 }

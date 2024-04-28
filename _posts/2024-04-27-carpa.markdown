@@ -3,3 +3,5 @@ layout: custom-post
 title: cârpa
 answer: șterge-o
 ---
+
+{{ page.answer | capitalize }}!

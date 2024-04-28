@@ -3,3 +3,5 @@ layout: custom-post
 title: albina
 answer: roiu
 ---
+
+{{ page.answer | capitalize }}!

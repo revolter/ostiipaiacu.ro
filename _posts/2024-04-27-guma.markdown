@@ -3,3 +3,5 @@ layout: custom-post
 title: guma
 answer: întinde-o
 ---
+
+{{ page.answer | capitalize }}!
