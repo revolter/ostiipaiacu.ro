@@ -40,6 +40,9 @@ minima:
   skin: auto
   date_format: "%F"
 
+kramdown:
+  smart_quotes: apos,apos,quot,quot
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
