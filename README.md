@@ -20,3 +20,7 @@
 ```sh
 npm run serve
 ```
+
+## License
+
+[GPL](LICENSE.md)
