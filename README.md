@@ -47,8 +47,8 @@ To add a new entry to the website:
    layout: custom-post
    title: <name>
    answer: <answer>
+   tag: <SFW or NSFW>
    source: <source?>
-   <NSFW tag?>
    ---
 
    {{ page.answer | answerify }}
@@ -57,10 +57,10 @@ To add a new entry to the website:
    - `<name>` is the same `<name>` used in the file name in step `1`
    - `<answer>` is the lowercased word or phrase that represents the second part
      of the joke, without any ending punctuation (e.g. `roiu`)
+   - `<SFW or NSFW>` is the indicator of whether the answer is safe for work or
+     not (e.g. `NSFW`),
    - `<source?>` is an optional source of the joke (e.g. `childhood`,
-     `http://roblogstar.blogspot.com/2013/07/stii-bancul-cu.html`),
-   - `<NSFW tag?>` is an optional `tag: NSFW` line for answers that are not safe
-     for work.
+     `http://roblogstar.blogspot.com/2013/07/stii-bancul-cu.html`).
 
    For example:
    ```liquid
@@ -68,6 +68,7 @@ To add a new entry to the website:
    layout: custom-post
    title: albina
    answer: roiu
+   tag: SFW
    source: childhood
    ---
 
