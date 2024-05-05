@@ -23,15 +23,6 @@ minima:
 kramdown:
     smart_quotes: apos,apos,quot,quot
 exclude:
-    - .jekyll-cache/
-    - .sass-cache/
-    - node_modules/
-    - vendor/bundle/
-    - vendor/cache/
-    - vendor/gems/
-    - vendor/ruby/
-    - Gemfile
-    - Gemfile.lock
     - package-lock.json
     - package.json
     - README.md
