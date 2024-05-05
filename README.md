@@ -51,12 +51,12 @@ To add a new entry to the website:
    source: <source?>
    ---
 
-   {{ page.answer | answerify }}
+   {{ page.answer }}
    ```
    where:
    - `<name>` is the same `<name>` used in the file name in step `1`
-   - `<answer>` is the lowercased word or phrase that represents the second part
-     of the joke, without any ending punctuation (e.g. `roiu`)
+   - `<answer>` is the capitalized word or phrase that represents the second
+     part of the joke, with the required ending punctuation (e.g. `Roiu!`)
    - `<SFW or NSFW>` is the indicator of whether the answer is safe for work or
      not (e.g. `NSFW`),
    - `<source?>` is an optional source of the joke (e.g. `childhood`,
@@ -67,12 +67,12 @@ To add a new entry to the website:
    ---
    layout: custom-post
    title: albina
-   answer: roiu
+   answer: Roiu!
    tag: SFW
    source: childhood
    ---
 
-   {{ page.answer | answerify }}
+   {{ page.answer }}
    ```
 
 ## License
