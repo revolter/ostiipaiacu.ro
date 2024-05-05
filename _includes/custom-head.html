@@ -1,5 +1,5 @@
 {% for tag in site.feed.tags.only %}
-<link type="application/atom+xml" rel="alternate" href="{{ site.feed.tags.path | append: tag | append: '.xml' | absolute_url }}" title="{{ tag }}: {{ site.title }}" />
+<link type="application/atom+xml" rel="alternate" href="{{ site.feed.tags.path | append: tag | append: '.xml' | relative_url }}" title="{{ tag }}: {{ site.title }}" />
 {%- endfor %}
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png?v=2' | relative_url }}">
