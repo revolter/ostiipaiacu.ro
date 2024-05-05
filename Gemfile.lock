@@ -101,7 +101,6 @@ DEPENDENCIES
   jekyll-octicons
   jekyll-remote-theme
   minima
-  webrick
 
 BUNDLED WITH
    2.5.7
