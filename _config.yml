@@ -23,6 +23,7 @@ minima:
 kramdown:
     smart_quotes: apos,apos,quot,quot
 exclude:
+    - LICENSE.md
     - package-lock.json
     - package.json
     - README.md
