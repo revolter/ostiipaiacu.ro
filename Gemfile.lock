@@ -100,7 +100,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll-octicons
   jekyll-remote-theme
-  kramdown-parser-gfm
   minima
   webrick
 
