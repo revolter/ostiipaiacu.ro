@@ -2,7 +2,8 @@
 
 source 'https://rubygems.org'
 
-gem 'github-pages'
 gem 'jekyll-octicons'
 gem 'jekyll-remote-theme'
+gem 'kramdown-parser-gfm'
+gem 'minima'
 gem 'webrick'
