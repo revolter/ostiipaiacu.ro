@@ -46,19 +46,19 @@ To add a new entry to the website:
    ---
    layout: custom-post
    title: <name>
-   answer: <answer>
+   solution: <solution>
    tag: <SFW or NSFW>
    source: <source?>
    ---
 
-   {{ page.answer }}
+   {{ page.solution }}
    ```
    where:
    - `<name>` is the same `<name>` used in the file name in step `1`
-   - `<answer>` is the capitalized word or phrase that represents the second
+   - `<solution>` is the capitalized word or phrase that represents the second
      part of the joke, with the required ending punctuation (e.g. `Roiu!`)
-   - `<SFW or NSFW>` is the indicator of whether the answer is safe for work or
-     not (e.g. `NSFW`),
+   - `<SFW or NSFW>` is the indicator of whether the solution is safe for work
+     or not (e.g. `NSFW`),
    - `<source?>` is an optional source of the joke (e.g. `childhood`,
      `http://roblogstar.blogspot.com/2013/07/stii-bancul-cu.html`).
 
@@ -67,12 +67,12 @@ To add a new entry to the website:
    ---
    layout: custom-post
    title: albina
-   answer: Roiu!
+   solution: Roiu!
    tag: SFW
    source: childhood
    ---
 
-   {{ page.answer }}
+   {{ page.solution }}
    ```
 
 ## License
