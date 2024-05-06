@@ -1,6 +1,5 @@
 title: O știi p-aia cu?
-baseurl: /ostiipaiacu.ro
-url: https://revolter.github.io
+url: https://ostiipaiacu.ro
 
 remote_theme: jekyll/minima
 plugins:
