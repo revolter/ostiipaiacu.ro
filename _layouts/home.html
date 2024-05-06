@@ -32,7 +32,7 @@ layout: base
                     {%- if post.tags contains 'NSFW' -%}
                         <span class="tag">NSFW</span>
                     {%- endif -%}
-                    <span class="spoiler-trigger"><!--
+                    <span class="spoiler-trigger" tabindex="0"><!--
                         -->{{ post.title | questionify: site.title }} <span class="spoiler">{{ post.content }}</span><!--
                     --></span>
                 </h3>
