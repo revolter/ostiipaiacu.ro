@@ -44,7 +44,6 @@ To add a new entry to the website:
 2. Edit the created file with the content
    ```liquid
    ---
-   layout: custom-post
    title: <name>
    solution: <solution>
    tag: <SFW or NSFW>
@@ -65,7 +64,6 @@ To add a new entry to the website:
    For example:
    ```liquid
    ---
-   layout: custom-post
    title: albina
    solution: Roiu!
    tag: SFW

@@ -12,6 +12,12 @@ exclude:
     - package-lock.json
     - package.json
     - README.md
+defaults:
+    - scope:
+          path: ''
+          type: posts
+      values:
+          layout: custom-post
 
 feed:
     path: /feeds/feed.xml
