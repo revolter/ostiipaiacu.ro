@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "serve": "watchy --watch '_config.yml' --watch '_plugins/*.rb' -- bundle exec jekyll serve"
+        "serve": "watchy --watch '_config.yml' --watch '_plugins/*.rb' -- bundle exec jekyll serve --trace"
     },
     "dependencies": {
         "watchy": "*"
