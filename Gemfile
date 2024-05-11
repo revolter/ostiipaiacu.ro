@@ -3,5 +3,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll-octicons'
+# Added due to https://github.com/rubygems/rubygems/issues/7652
 gem 'jekyll-remote-theme'
+# Disabled due to https://github.com/rubygems/rubygems/issues/7652
+# gem 'minima', github: 'jekyll/minima'
 gem 'minima'
