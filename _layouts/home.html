@@ -10,34 +10,33 @@ layout: base
     {{ content }}
 
     {%- if site.posts.size > 0 -%}
-        {%- assign sorted_posts = site.posts | sort_natural: 'title' -%}
-
+        {%- assign sorted_posts = site.posts | sort_natural: 'title' %}
         <ul>
-            {%- for post in sorted_posts -%}
-            <li>
-                <a href="#{{ post.title }}">{{ post.title }}</a>
-            </li>
-            {%- endfor -%}
+            {%- for post in sorted_posts %}
+                <li>
+                    <a href="#{{ post.title }}">{{ post.title }}</a>
+                </li>
+            {%- endfor %}
         </ul>
 
         <hr>
 
         <ul class="post-list">
-            {%- for post in sorted_posts -%}
-            <li>
-                <h3>
-                    <a id="{{ post.title }}" class="post-link permalink" href="#{{ post.title }}">
-                        {% octicon link height:16 fill:var(--minima-text-color) %}
-                    </a>
-                    {%- if post.tags contains 'NSFW' -%}
-                        <span class="tag">NSFW</span>
-                    {%- endif -%}
-                    <span class="spoiler-trigger" tabindex="0"><!--
-                        -->{{ post.title | questionify: site.title }} <span class="spoiler">{{ post.content }}</span><!--
-                    --></span>
-                </h3>
-            </li>
-            {%- endfor -%}
+            {%- for post in sorted_posts %}
+                <li>
+                    <h3>
+                        <a id="{{ post.title }}" class="post-link permalink" href="#{{ post.title }}">
+                            {% octicon link height:16 fill:var(--minima-text-color) %}
+                        </a>
+                        {% if post.tags contains 'NSFW' -%}
+                            <span class="tag">NSFW</span>
+                        {%- endif %}
+                        <span class="spoiler-trigger" tabindex="0"><!--
+                            -->{{ post.title | questionify: site.title }} <span class="spoiler">{{ post.content }}</span><!--
+                        --></span>
+                    </h3>
+                </li>
+            {%- endfor %}
         </ul>
     {%- endif -%}
 </div>

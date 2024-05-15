@@ -1,7 +1,7 @@
-{% for tag in site.feed.tags.only -%}
-    {%- assign path = site.feed.tags.path | append: tag | append: '.xml' -%}
-<link type="application/atom+xml" rel="alternate" href="{{ path | absolute_url }}" title="{{ tag }}: {{ site.title }}" />
-{%- endfor %}
+{% for tag in site.feed.tags.only %}
+    {% assign path = site.feed.tags.path | append: tag | append: '.xml' -%}
+    <link type="application/atom+xml" rel="alternate" href="{{ path | absolute_url }}" title="{{ tag }}: {{ site.title }}" />
+{%- endfor -%}
 
 {% assign favicon_version = 3 %}
 <link rel="apple-touch-icon" sizes="180x180" href="{% link /assets/favicon/apple-touch-icon.png %}?v={{ favicon_version }}">
