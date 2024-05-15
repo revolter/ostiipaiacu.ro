@@ -1,7 +1,5 @@
 {% for tag in site.feed.tags.only -%}
-	{%- capture path -%}
-		{{ site.feed.tags.path | append: tag | append: '.xml' }}
-	{%- endcapture %}
+	{%- assign path = site.feed.tags.path | append: tag | append: '.xml' -%}
 <link type="application/atom+xml" rel="alternate" href="{{ path | relative_url }}" title="{{ tag }}: {{ site.title }}" />
 {%- endfor %}
 
