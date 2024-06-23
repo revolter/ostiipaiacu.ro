@@ -13,14 +13,20 @@ $small-gap: 5px;
     color: $dm-background-color;
 }
 
-.spoiler * {
-    display: inline-block;
-    color: transparent;
-    background-color: black;
-    transition-duration: 300ms;
+.spoiler {
+    * {
+        display: inline-block;
+        color: transparent;
+        background-color: black;
+        transition-duration: 300ms;
+    }
 }
 
-.spoiler-trigger:hover > .spoiler * {
-    color: inherit;
-    background-color: inherit;
+.spoiler-trigger:hover {
+    .spoiler {
+        * {
+            color: inherit;
+            background-color: inherit;
+        }
+    }
 }
