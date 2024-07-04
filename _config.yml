@@ -43,3 +43,4 @@ minima:
           user_url: https://github.com/revolter/ostiipaiacu.ro
 sass:
     style: compressed
+    sourcemap: development
