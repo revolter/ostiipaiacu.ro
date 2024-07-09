@@ -19,7 +19,7 @@ defaults:
     - scope:
           path: ""
       values:
-          image: /assets/favicon/android-chrome-512x512.png
+          image: /assets/images/favicon/android-chrome-512x512.png
     - scope:
           path: ''
           type: posts
