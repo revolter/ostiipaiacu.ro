@@ -73,6 +73,23 @@ To add a new entry to the website:
    {{ page.solution }}
    ```
 
+## Configuration
+
+### Favicon
+
+- Check if RealFaviconGenerator
+  [got updated](https://realfavicongenerator.net/change_log) by running
+  ```sh
+  npm run check-favicon-update
+  ```
+- If you update [the source SVG](sources/favicon/favicon.svg), or if
+  RealFaviconGenerator gets updated, update the favicon assets by running
+  ```sh
+  npm run update-favicon
+  ```
+- Check the generated (and deployed) favicon assets by going to
+  https://realfavicongenerator.net/favicon_checker?protocol=https&site=ostiipaiacu.ro
+
 ## License
 
 [GPL](LICENSE.md)
