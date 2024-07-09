@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "serve": "watchy --watch '_config.yml' --watch '_plugins/*.rb' -- bundle exec jekyll serve --trace --baseurl '/ostiipaiacu.ro'",
+        "serve": "watchy --watch '_config.yml' --watch '_plugins/*.rb' -- bundle exec jekyll serve --host '0.0.0.0' --trace --baseurl '/ostiipaiacu.ro'",
 
         "pregenerate-favicon": "mkdir -p assets/images/favicon",
         "generate-favicon": "real-favicon generate sources/favicon/faviconDescription.json sources/favicon/faviconData.json assets/images/favicon",
