@@ -1,5 +1,8 @@
 title: O știi p-aia cu?
 url: https://ostiipaiacu.ro
+author:
+    name: Iulian Onofrei
+    url: https://iulianonofrei.com
 
 # Disabled due to https://github.com/rubygems/rubygems/issues/7652
 # theme: minima
