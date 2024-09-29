@@ -34,3 +34,9 @@ $small-gap: 5px;
 .contact-list {
     display: none;
 }
+
+a:target ~ .spoiler-trigger {
+    outline: 2px solid hsl(210 85% 50%);
+    outline-offset: 6px;
+    border-radius: 1px;
+}
