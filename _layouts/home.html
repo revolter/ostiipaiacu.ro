@@ -34,6 +34,15 @@ layout: base
                         <span class="spoiler-trigger" tabindex="0"><!--
                             -->{{ post.title | questionify: site.title }} <span class="spoiler">{{ post.content }}</span><!--
                         --></span>
+                        {% if post.source.size > 0 %}
+                            <span class="source">
+                                {% if post.source contains 'http' %}
+                                    <a href="{{ post.source }}" target="_blank">Sursa</a>
+                                {% else %}
+                                    Sursa: {{ post.source }}
+                                {% endif %}
+                            </span>
+                        {% endif %}
                     </h3>
                 </li>
             {%- endfor %}
